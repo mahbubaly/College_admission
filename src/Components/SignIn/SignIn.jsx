@@ -1,7 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Providers/AuthProviders/AuthProvider';
 
 const SignIn = () => {
+    const { signIn } = useContext(AuthContext);
+
+    const location = useLocation();
+    console.log(location);
+    const Navigate = useNavigate();
+
+    const from = location.state?.form?.pathname || '/'
+
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password)
+
+        setError('');
+        signIn(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                form.reset();
+                Navigate(from, { replace: true });
+
+
+
+            })
+            .catch(error => {
+                console.error(error);
+                setError("Invalid password!!")
+            })
+    }
+
     return (
         <>
 
@@ -14,7 +48,7 @@ const SignIn = () => {
 
 
 
-                    <form className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
+                    <form onSubmit={handleLogin} className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
                     >
                         <p className="text-center text-lg font-medium">Sign in to your account</p>
 
@@ -23,6 +57,7 @@ const SignIn = () => {
 
                             <div className="relative">
                                 <input
+                                    name='email'
                                     required
                                     type="email"
                                     className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
@@ -53,6 +88,7 @@ const SignIn = () => {
 
                             <div className="relative">
                                 <input
+                                    name='password'
                                     required
                                     type="password"
                                     className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"

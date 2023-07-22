@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import icon from '../../assets/Images/user.png'
 import logo from '../../assets/Images/logo.jpg'
@@ -7,9 +7,20 @@ import { Link } from 'react-router-dom';
 import { RxCross2 } from 'react-icons/rx';
 import { AiFillHome } from 'react-icons/ai';
 import { BiLogIn } from 'react-icons/bi';
+import { AuthContext } from '../Providers/AuthProviders/AuthProvider';
 
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handlerLogout = () => {
+        logOut()
+            .then(result => { })
+            .catch(error => {
+                console.error(error.message);
+            })
+    }
     const navbar = <>
         <Link to='/' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
@@ -26,28 +37,52 @@ const Navbar = () => {
             <h1>  Admission</h1>
             <img src={icon} alt="" />
         </Link>
-        <Link to='signIn' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
 
 
-            <h1>  Sign in</h1>
-            <BiLogIn className='w-8 h-6' />
 
-        </Link>
-        <Link to='signUp' className="flex gap-1 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+        <div>
+            {
+                user ? <div className='flex gap-3'>
 
-            <h1>  Sign Up</h1>
-            <img src={icon} alt="" />
-        </Link>
-        <Link to='myAdmissions' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+                    <Link to='myAdmissions' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
 
-            <h1>  My College</h1>
-        </Link>
+                        <h1>  My College</h1>
+                    </Link>
+                    <Link onClick={handlerLogout} className="flex gap-1 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+
+                        <h1 >  Sign Out</h1>
+                        <img src={icon} alt="" />
+                    </Link>
+
+
+
+
+                </div> : <div className='flex gap-3'>
+                    <Link to='signIn' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+
+
+
+                        <h1>  Sign in</h1>
+                        <BiLogIn className='w-8 h-6' />
+
+                    </Link>
+                    <Link to='signUp' className="flex gap-1 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+
+                        <h1>  Sign Up</h1>
+                        <img src={icon} alt="" />
+                    </Link>
+                </div>
+            }
+        </div>
 
 
     </>
     const [open, setOpen] = useState(false);
+
+
+
     return (
         <>
 
