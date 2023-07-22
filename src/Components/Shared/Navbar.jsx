@@ -27,7 +27,7 @@ const Navbar = () => {
             <img src={icon} alt="" />
         </Link>
         <Link to='signIn' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
-            
+
 
 
             <h1>  Sign in</h1>
@@ -127,7 +127,7 @@ const Navbar = () => {
 
 
 
-           
+
         </>
 
 
