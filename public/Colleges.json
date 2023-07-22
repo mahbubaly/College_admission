@@ -1,0 +1,284 @@
+[
+    {
+      "college_image": "https://royalcrownschool.com/wp-content/uploads/2017/03/Top-Universities-and-Colleges-in-Ontario-for-International-Students.jpg",
+      "college_name": "The royel University",
+      "admission_dates": {
+        "fall": "September 2023",
+        "spring": "January 2024",
+        "summer": "May 2024"
+      },
+      "events": [
+        "Orientation Day",
+        "Career Fair",
+        "Alumni Homecoming",
+        "Science Expo",
+        "Arts Festival"
+      ],
+      "research_history": [
+        {
+          "year": "2019",
+          "event": "International Conference on Science",
+          "description": "Presented groundbreaking research in renewable energy."
+        },
+        {
+          "year": "2020",
+          "event": "Annual Symposium on Technology",
+          "description": "Published research papers on AI and Machine Learning."
+        }
+      ],
+      "sports": ["Football", "Basketball", "Swimming", "Soccer"]
+    },
+    {
+      "college_image": "https://www.moovaz.com/wp-content/uploads/2021/11/university-of-toronto.jpg",
+      "college_name": "ABC College",
+      "admission_dates": {
+        "fall": "August 2023",
+        "spring": "January 2024",
+        "summer": "May 2024"
+      },
+      "events": [
+        "Freshers' Party",
+        "Cultural Fest",
+        "Sports Day",
+        "Tech Expo"
+      ],
+      "research_history": [
+        {
+          "year": "2018",
+          "event": "National Conference on Literature",
+          "description": "Presented a paper on modern poetry."
+        },
+        {
+          "year": "2021",
+          "event": "International Symposium on Environmental Studies",
+          "description": "Received recognition for research on climate change."
+        }
+      ],
+      "sports": ["Cricket", "Badminton", "Table Tennis", "Volleyball"]
+    },
+    {
+      "college_image": "https://www.narcity.com/media-library/university-of-toronto-voted-the-best-in-canada-for-dozens-of-subjects.jpg?id=26009799&width=1200&height=600&coordinates=0%2C299%2C0%2C299",
+      "college_name": "XYZ Institute of Technology",
+      "admission_dates": {
+        "fall": "October 2023",
+        "spring": "February 2024",
+        "summer": "June 2024"
+      },
+      "events": [
+        "Tech Hackathon",
+        "Robotics Competition",
+        "Innovation Summit",
+        "Cultural Week"
+      ],
+      "research_history": [
+        {
+          "year": "2020",
+          "event": "International Conference on Artificial Intelligence",
+          "description": "Published research on explainable AI."
+        },
+        {
+          "year": "2022",
+          "event": "IEEE Symposium on Robotics",
+          "description": "Won the best paper award for research in autonomous robots."
+        }
+      ],
+      "sports": ["Tennis", "Golf", "Athletics", "Chess"]
+    },
+    {
+      "college_image": "https://www.collegemagazine.com/wp-content/uploads/2017/05/Harper_Midway_Chicago.jpg",
+      "college_name": "City College of Arts",
+      "admission_dates": {
+        "fall": "September 2023",
+        "spring": "January 2024",
+        "summer": "May 2024"
+      },
+      "events": [
+        "Fine Arts Exhibition",
+        "Literary Fest",
+        "Film Festival",
+        "Dance Showcase"
+      ],
+      "research_history": [
+        {
+          "year": "2019",
+          "event": "National Conference on Visual Arts",
+          "description": "Exhibited a series of paintings on social issues."
+        },
+        {
+          "year": "2021",
+          "event": "International Film Symposium",
+          "description": "Screened a short film that received critical acclaim."
+        }
+      ],
+      "sports": ["Basketball", "Volleyball", "Kabaddi", "Yoga"]
+    },
+    {
+      "college_image": "https://inspirich.com/wp-content/uploads/2014/06/93.jpg",
+      "college_name": "Science and Research Institute",
+      "admission_dates": {
+        "fall": "October 2023",
+        "spring": "February 2024",
+        "summer": "June 2024"
+      },
+      "events": [
+        "Science Fair",
+        "Research Expo",
+        "Innovation Workshop",
+        "Tech Symposium"
+      ],
+      "research_history": [
+        {
+          "year": "2020",
+          "event": "International Symposium on Biotechnology",
+          "description": "Contributed to research on genetic engineering."
+        },
+        {
+          "year": "2023",
+          "event": "Conference on Space Exploration",
+          "description": "Presented findings on exoplanet detection."
+        }
+      ],
+      "sports": ["Swimming", "Badminton", "Table Tennis", "Chess"]
+    },
+    {
+      "college_image": "https://i.insider.com/563cf3349dd7cc24008c7e09?width=750&format=jpeg&auto=webp",
+      "college_name": "Business School of Finance",
+      "admission_dates": {
+        "fall": "August 2023",
+        "spring": "January 2024",
+        "summer": "May 2024"
+      },
+      "events": [
+        "Business Plan Competition",
+        "Finance Summit",
+        "Entrepreneurship Forum",
+        "Leadership Seminar"
+      ],
+      "research_history": [
+        {
+          "year": "2020",
+          "event": "International Conference on Finance",
+          "description": "Presented research on behavioral finance."
+        },
+        {
+          "year": "2022",
+          "event": "Entrepreneurship and Innovation Symposium",
+          "description": "Received recognition for research on startup success factors."
+        }
+      ],
+      "sports": ["Cricket", "Basketball", "Tennis", "Golf"]
+    },
+    {
+      "college_image": "https://www.careermarg.in/uploads/college-image/1655290443-institute-of-applied-health-science-iahs-chittagong-chittagong.jpg",
+      "college_name": "Health and Medical College",
+      "admission_dates": {
+        "fall": "October 2023",
+        "spring": "February 2024",
+        "summer": "June 2024"
+      },
+      "events": [
+        "Medical Symposium",
+        "Healthcare Conference",
+        "Research Colloquium",
+        "Wellness Camp"
+      ],
+      "research_history": [
+        {
+          "year": "2019",
+          "event": "International Conference on Medicine",
+          "description": "Presented research on rare diseases."
+        },
+        {
+          "year": "2022",
+          "event": "Healthcare Innovation Summit",
+          "description": "Received recognition for work on telemedicine."
+        }
+      ],
+      "sports": ["Athletics", "Yoga", "Swimming", "Basketball"]
+    },
+    {
+      "college_image": "https://img.money.com/2023/06/Best-Colleges-2023-South-Georgetown-University.jpg",
+      "college_name": "Environmental Studies University",
+      "admission_dates": {
+        "fall": "August 2023",
+        "spring": "January 2024",
+        "summer": "May 2024"
+      },
+      "events": [
+        "Environmental Awareness Week",
+        "Climate Action Symposium",
+        "Sustainability Summit",
+        "Green Technology Expo"
+      ],
+      "research_history": [
+        {
+          "year": "2020",
+          "event": "International Conference on Environmental Science",
+          "description": "Presented research on water conservation."
+        },
+        {
+          "year": "2023",
+          "event": "Climate Change and Policy Forum",
+          "description": "Published a paper on renewable energy adoption."
+        }
+      ],
+      "sports": ["Football", "Volleyball", "Cricket", "Swimming"]
+    },
+    {
+      "college_image": "https://img.money.com/2016/07/160711_col_bestcollegesft_1.jpg?crop=0px%2C170px%2C2100px%2C1181px&quality=60&w=800",
+      "college_name": "Law and Justice Academy",
+      "admission_dates": {
+        "fall": "October 2023",
+        "spring": "February 2024",
+        "summer": "June 2024"
+      },
+      "events": [
+        "Moot Court Competition",
+        "Legal Symposium",
+        "Human Rights Forum",
+        "Mock Trial"
+      ],
+      "research_history": [
+        {
+          "year": "2018",
+          "event": "National Legal Research Conference",
+          "description": "Published a paper on criminal justice reform."
+        },
+        {
+          "year": "2022",
+          "event": "International Human Rights Summit",
+          "description": "Presented findings on refugee rights."
+        }
+      ],
+      "sports": ["Chess", "Badminton", "Table Tennis", "Athletics"]
+    },
+    {
+      "college_image": "https://lh5.googleusercontent.com/p/AF1QipMP6cXnP3e8JpThrdtN9N9EQyl0-gKkHU2dXZ28=w408-h306-k-no",
+      "college_name": "Performing Arts Conservatory",
+      "admission_dates": {
+        "fall": "September 2023",
+        "spring": "January 2024",
+        "summer": "May 2024"
+      },
+      "events": [
+        "Theater Festival",
+        "Dance Showcase",
+        "Music Recitals",
+        "Film and TV Acting Workshop"
+      ],
+      "research_history": [
+        {
+          "year": "2019",
+          "event": "National Drama Symposium",
+          "description": "Performed in a critically acclaimed play."
+        },
+        {
+          "year": "2021",
+          "event": "Film and Media Conference",
+          "description": "Screened a short film with an award-winning performance."
+        }
+      ],
+      "sports": ["Yoga", "Athletics", "Swimming", "Basketball"]
+    }
+  ]
+  
