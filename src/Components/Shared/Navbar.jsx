@@ -32,7 +32,7 @@ const Navbar = () => {
             <h1>  Colleges</h1>
             <img src={icon} alt="" />
         </Link>
-        <Link to='admission' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+        <Link to='/admissions' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
             <h1>  Admission</h1>
             <img src={icon} alt="" />
@@ -45,7 +45,7 @@ const Navbar = () => {
             {
                 user ? <div className='flex gap-3'>
 
-                    <Link to='myAdmissions' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
+                    <Link to='myApplied' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
 
                         <h1>  My College</h1>

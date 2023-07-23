@@ -267,7 +267,7 @@ const SignUp = () => {
 
                                 </form>
 
-                                <h1 className=' mt-4 text-[red]'>{error}</h1>
+                               
 
 
                             </div>

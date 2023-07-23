@@ -7,17 +7,19 @@ const Search = () => {
     const [colleges, setColleges] = useState([]);
 
     useEffect(() => {
-        fetch('Colleges.json')
+        fetch('https://admission-server-mahbubaly.vercel.app/colleges')
             .then(res => res.json())
             .then(data => {
                 const sliceData = data.slice(0, 3);
-                console.log(data);
+
                 setColleges(sliceData);
             });
 
     }, [])
 
 
+    const [Search, setSearch] = useState('');
+    console.log(Search);
 
     return (
         <>
@@ -26,6 +28,7 @@ const Search = () => {
                 <div className='  flex justify-center my-7'>
 
                     <input
+                        onChange={(e) => setSearch(e.target.value)}
 
                         type="search"
                         placeholder="Search by college name..."
@@ -44,7 +47,9 @@ const Search = () => {
 
                         {
 
-                            colleges.map(College => <LatestColleges
+                            colleges.filter((item) => {
+                                return Search.toLowerCase() === '' ? item : item.college_name.toLowerCase().includes(Search);
+                            }).map(College => <LatestColleges
                                 key={College._id}
                                 College={College}
 
@@ -58,8 +63,8 @@ const Search = () => {
                         }
 
 
-                       
-                       
+
+
 
                     </div>
                 </div>

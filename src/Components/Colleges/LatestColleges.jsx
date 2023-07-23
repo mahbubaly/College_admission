@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const LatestColleges = ({ College }) => {
-    console.log(College);
-    const { college_image, college_name, admission_dates, events, research_history, sports } = College;
+    // console.log(College);
+    const { college_image, college_name, admission_dates, events, research_history, sports , _id } = College;
     return (
         <>
             <a  className="block bg_shawdow  rounded-lg p-4 shadow-sm shadow-indigo-100">
@@ -73,7 +73,7 @@ const LatestColleges = ({ College }) => {
                     </div>
 
                     <div className='flex justify-end'>
-                        <Link to='/details'><button className='btn btn-primary my-5 '>Details </button></Link>
+                        <Link to={`/details/${_id}`} ><button className='btn btn-primary my-5 '>Details </button></Link>
                     </div>
 
                 </div>

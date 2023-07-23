@@ -1,0 +1,102 @@
+[
+    {
+        "college": "The royel University",
+        "reviews": "The royel University of Sunshine was a life-changing decision for me. The campus is beautiful, and the sense of community among students is heartwarming. The career services were very helpful, and I received a lot of support in finding internships.",
+        "feedback": [
+            "Beautiful campus",
+            "Strong sense of community",
+            "Helpful career services"
+        ],
+        "star": 4.5
+    },
+    {
+        "college": "ABC University",
+        "reviews": "I absolutely loved my time at ABC University. The campus is stunning, and the faculty is incredibly supportive. The academic programs are top-notch, and the campus life is vibrant and diverse.",
+        "feedback": [
+            "Great campus",
+            "Supportive faculty",
+            "Excellent academics"
+        ],
+        "star": 5
+    },
+    {
+        "college": "XYZ Institute of Technology",
+        "reviews": "XYZ Institute of Technology provided me with an unforgettable experience. The professors were knowledgeable and approachable, making the learning environment enjoyable. The campus facilities were excellent, and there were plenty of extracurricular activities to participate in.",
+        "feedback": [
+            "Knowledgeable professors",
+            "Great campus facilities",
+            "Wide range of extracurriculars"
+        ],
+        "star": 4
+    },
+    {
+        "college": "City College of Arts",
+        "reviews": "City College of Arts offers an exceptional education. The professors are experts in their fields and are passionate about teaching. The small class sizes allowed for personalized attention, and I made some lifelong friends during my time there.",
+        "feedback": [
+            "Expert professors",
+            "Personalized attention",
+            "Great friendships"
+        ],
+        "star": 4.7
+    },
+    {
+        "college": "Science and Research Institute",
+        "reviews": "Science and Research Institute has a fantastic location right by the beach. The campus is modern, and there's a great mix of social and academic opportunities. The college has a strong focus on research, and I had access to some amazing resources.",
+        "feedback": [
+            "Beautiful beachside location",
+            "Modern campus",
+            "Strong research focus"
+        ],
+        "star": 4.2
+    },
+    {
+        "college": "Business School of Finance",
+        "reviews": "Business School of Finance has a close-knit community that feels like a family. The religious and spiritual atmosphere was comforting, and the professors genuinely cared about their students' success. The campus facilities were well-maintained and up-to-date.",
+        "feedback": [
+            "Close-knit community",
+            "Caring professors",
+            "Well-maintained facilities"
+        ],
+        "star": 4.6
+    },
+    {
+        "college": "Health and Medical College",
+        "reviews": "Health and Medical College offers an urban campus experience with plenty of opportunities for networking and internships. The courses were challenging and engaging, and the city location provided endless cultural experiences.",
+        "feedback": [
+            "Urban campus experience",
+            "Challenging courses",
+            "Endless cultural experiences"
+        ],
+        "star": 4.3
+    },
+    {
+        "college": "Environmental Studies University",
+        "reviews": "Environmental Studies University has a strong emphasis on extracurricular involvement. I was able to join various clubs and organizations, which enriched my college experience. The professors were supportive, and the campus was peaceful and conducive to learning.",
+        "feedback": [
+            "Strong extracurriculars",
+            "Supportive professors",
+            "Peaceful campus environment"
+        ],
+        "star": 4.8
+    },
+    {
+        "college": "Law and Justice Academy",
+        "reviews": "Law and Justice Academy has a stunning campus surrounded by nature. The environmentally-conscious approach was inspiring, and the campus sustainability efforts were commendable. The academic programs were diverse and catered to individual interests.",
+        "feedback": [
+            "Stunning campus",
+            "Environmentally-conscious approach",
+            "Diverse academic programs"
+        ],
+        "star": 4.4
+    },
+    {
+        "college": "Performing Arts Conservatory",
+        "reviews": "Performing Arts Conservatory has a welcoming and inclusive atmosphere. The campus is beautiful, and the faculty is dedicated to their students' success. The wide range of clubs and activities made my college life memorable.",
+        "feedback": [
+            "Welcoming and inclusive atmosphere",
+            "Dedicated faculty",
+            "Memorable extracurriculars"
+        ],
+        "star": 4.9
+    }
+]

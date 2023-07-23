@@ -9,6 +9,11 @@ import Colleges from "../Colleges/Colleges";
 import Details from "../Colleges/Details";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
+import ReviewAll from "../Testimonial/ReviewAll";
+import Admission from "../Admissions/Admission";
+import Apply from "../Admissions/Apply";
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import MyColleges from "../MyColleges/MyColleges";
 
 const router = createBrowserRouter([
     {
@@ -30,13 +35,32 @@ const router = createBrowserRouter([
                 element: <SignIn />
             },
             {
-                path: '/details',
-                element: <Details />
+                path: '/details/:id',
+                element: <PrivateRoute><Details /> </PrivateRoute>,
+                loader: ({ params }) => fetch(`https://admission-server-mahbubaly.vercel.app/colleges/${params.id}`)
             }
             ,
             {
                 path: '/signUp',
                 element: <SignUp />
+            }
+            ,
+            {
+                path: '/reviewAll',
+                element: <ReviewAll />
+            }
+            ,
+            {
+                path: '/admissions',
+                element: <Admission />
+            },
+            {
+                path: '/applyNow',
+                element: <Apply />
+            },
+            {
+                path: '/myApplied',
+                element: <MyColleges />
             }
         ]
     },
