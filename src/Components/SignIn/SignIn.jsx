@@ -1,14 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProviders/AuthProvider';
+import Swal from 'sweetalert2';
 
 const SignIn = () => {
     const { signIn } = useContext(AuthContext);
 
     const location = useLocation();
-    console.log(location);
-    const Navigate = useNavigate();
+    const { error, setError } = useState();
 
+    const Navigate = useNavigate()
     const from = location.state?.form?.pathname || '/'
 
 
@@ -17,22 +18,31 @@ const SignIn = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
 
-        setError('');
+
+
         signIn(email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                form.reset();
+                Swal.fire({
+                    title: 'Successfully Log in',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                })
                 Navigate(from, { replace: true });
+
 
 
 
             })
             .catch(error => {
                 console.error(error);
-                setError("Invalid password!!")
+
             })
     }
 
@@ -119,6 +129,8 @@ const SignIn = () => {
                                 </span>
                             </div>
                         </div>
+
+                        <h1 className='text-[red]'>{error}</h1>
 
                         <button
                             type="submit"

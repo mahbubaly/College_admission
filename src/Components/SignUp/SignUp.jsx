@@ -22,7 +22,7 @@ const SignUp = () => {
 
 
         if (password !== confirm) {
-            
+
             Swal.fire({
                 title: 'Passwords do not match!!',
                 showClass: {
