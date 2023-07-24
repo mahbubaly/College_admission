@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProviders/AuthProvider';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const SignIn = () => {
     const { signIn } = useContext(AuthContext);
@@ -48,6 +49,10 @@ const SignIn = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Sign in</title>
+            </Helmet>
+
 
 
             <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">

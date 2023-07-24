@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReviewBy from './ReviewBy';
+import { Helmet } from 'react-helmet-async';
 
 const ReviewAll = () => {
 
@@ -20,6 +21,11 @@ const ReviewAll = () => {
     return (
         <>
 
+            <Helmet>
+                <title>Read all review </title>
+            </Helmet>
+
+
 
             <section className="bg-gray-100">
                 <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
@@ -31,7 +37,7 @@ const ReviewAll = () => {
 
                             <p className="mt-8 max-w-lg text-gray-500">
                                 Dignissimos cum amet sequi? At ut doloribus natus tempore reiciendis? Quisquam neque nulla, provident voluptatem esse quia totam quidem iure necessitatibus, facilis aperiam temporibus?
-                                
+
                             </p>
                         </div>
 

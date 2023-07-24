@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Apply = () => {
 
@@ -8,6 +9,10 @@ const Apply = () => {
     }
     return (
         <>
+            <Helmet>
+                <title>Apply now</title>
+            </Helmet>
+
 
 
             <section class="bg-white max-w-screen-xl mx-auto">
@@ -24,7 +29,7 @@ const Apply = () => {
                             for="FirstName"
                             className="block text-sm lg:text-xl font-medium text-gray-700"
                         >
-                           Candidate Name
+                            Candidate Name
                         </label>
 
                         <input
@@ -48,7 +53,7 @@ const Apply = () => {
                         <input
                             required
                             type="email"
-                            
+
                             name="email"
                             className="mt-1 p-3 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                             placeholder='Enter Email...'
@@ -57,7 +62,7 @@ const Apply = () => {
 
                     <div className="col-span-3">
                         <label for="Email" className="block lg:text-xl text-sm font-medium text-gray-700">
-                        Candidate Phone
+                            Candidate Phone
                         </label>
 
                         <input
@@ -123,7 +128,7 @@ const Apply = () => {
                         />
                     </div>
 
-                  
+
 
                     <div className="col-span-6">
                         <label for="MarketingAccept" className="flex gap-4">
@@ -136,7 +141,7 @@ const Apply = () => {
                             />
 
                             <span className="text-sm text-gray-700">
-                               As I am Candidate,  I obey the rule and team and condition . 
+                                As I am Candidate,  I obey the rule and team and condition .
                             </span>
                         </label>
                     </div>

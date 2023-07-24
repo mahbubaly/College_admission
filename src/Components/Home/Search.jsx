@@ -40,7 +40,7 @@ const Search = () => {
 
                 <div>
 
-                    <div className='flex my-10 justify-center mx-auto border-b-4 rounded-lg border-b-[#003F62] w-[25%]'>
+                    <div className='flex my-10 justify-center mx-auto border-b-4 rounded-lg border-b-[#003F62] lg:w-[25%]'>
                         <h1 className='font-bold text-xl'>Latest Colleges</h1>
                     </div>
                     <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-4 my-8'>

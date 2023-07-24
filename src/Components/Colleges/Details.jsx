@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const Details = () => {
@@ -8,6 +9,11 @@ const Details = () => {
     const { college_image, college_name, details, admission_dates, events, research_history, sports } = detailsId;
     return (
         <>
+
+            <Helmet>
+                <title>Colleges || Details</title>
+            </Helmet>
+
             <section>
                 <div className="mx-auto max-w-screen-xl px-4  sm:px-6 lg:px-8 bg-gray-100">
 
@@ -85,7 +91,7 @@ const Details = () => {
                                 href="#"
                                 className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                             >
-                               Apply Now
+                                Apply Now
                             </a>
                         </div>
                     </div>

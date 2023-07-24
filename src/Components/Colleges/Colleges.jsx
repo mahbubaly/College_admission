@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LatestColleges from './LatestColleges';
+import { Helmet } from 'react-helmet-async';
 
 const Colleges = () => {
     const [colleges, setColleges] = useState([]);
@@ -19,6 +20,11 @@ const Colleges = () => {
     console.log(Search);
     return (
         <>
+
+            <Helmet>
+                <title>Colleges</title>
+            </Helmet>
+
 
             <div className='max-w-screen-xl mx-auto'>
 

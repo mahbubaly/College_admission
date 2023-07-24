@@ -1,9 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+
 
 const Admission = () => {
     return (
         <>
+
+            <Helmet>
+                <title>Admission</title>
+            </Helmet>
+
 
             <div className='max-w-screen-xl mx-auto'>
 

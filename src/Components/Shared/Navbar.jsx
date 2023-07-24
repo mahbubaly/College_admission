@@ -13,6 +13,7 @@ import { AuthContext } from '../Providers/AuthProviders/AuthProvider';
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
+    console.log(user);
 
     const handlerLogout = () => {
         logOut()
@@ -43,7 +44,7 @@ const Navbar = () => {
 
         <div>
             {
-                user ? <div className='flex gap-3'>
+                user ? <div className='lg:flex gap-3'>
 
                     <Link to='myApplied' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
@@ -54,12 +55,14 @@ const Navbar = () => {
 
                         <h1 >  Sign Out</h1>
                         <img src={icon} alt="" />
+                        <img src={user.profile} alt="" />
+                       
                     </Link>
 
 
 
 
-                </div> : <div className='flex gap-3'>
+                </div> : <div className='lg:flex gap-3'>
                     <Link to='signIn' className="flex gap-2 rounded-md  hover:shadow-sm  px-5 py-2.5 text-sm font-medium text-white shadow">
 
 

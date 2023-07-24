@@ -3,6 +3,7 @@ import logo from '../../assets/Images/logo.jpg';
 import { AuthContext } from '../Providers/AuthProviders/AuthProvider';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const SignUp = () => {
     const [error, setError] = useState();
@@ -87,6 +88,11 @@ const SignUp = () => {
     }
     return (
         <>
+
+            <Helmet>
+                <title>Sign up</title>
+            </Helmet>
+
             <div className='max-w-screen-xl mx-auto p-6'>
 
 
@@ -267,7 +273,7 @@ const SignUp = () => {
 
                                 </form>
 
-                               
+
 
 
                             </div>
